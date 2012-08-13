@@ -3,7 +3,7 @@
 //  IACP_MAYFIS
 //
 //  Created by Grace on 12/5/10.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012年 IAC. All rights reserved.
 //
 
 #import "IACP_MAYFIS.h"
@@ -436,7 +436,7 @@
 		
 	}
 	@catch (NSException *exception) {
-		NSRunAlertPanel(@"Exception", [NSString stringWithFormat:@"Error: checkCFGSNWCRetCMBSN Error", [exception reason]],@"OK",nil,nil);
+		NSRunAlertPanel(@"Exception", [NSString stringWithFormat:@"Error: checkCFGSNWCRetCMBSN Error: %@", [exception reason]],@"OK",nil,nil);
 		return nil;
 	}
 	return nil;
